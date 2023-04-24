@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10</title>
+</head>
+
+<body>
+    <script>
+        // lê o valor de N do usuário
+        let n = parseInt(prompt("Digite um número inteiro:"));
+
+        // verifica se N é um número válido
+        while (isNaN(n)) {
+            n = parseInt(prompt("Valor inválido. Digite um número inteiro:"));
+        }
+
+        // imprime todas as tabuadas de 1 a N
+        for (let i = 1; i <= n; i++) {
+            console.log(`Tabuada do ${i}:`);
+            for (let tab = 1; tab <= 10; tab++) {
+                alert(`${i} x ${tab} = ${i * tab}`);
+            }
+            alert(""); // pula uma linha entre as tabuadas
+        }
+    </script>
+</body>
+
+</html>
